@@ -35,31 +35,41 @@ client.on('message', async message => {
     if (message.member.hasPermission("ADMINISTRATOR")) {
       setPrefix(message);
     }
+    return;
   }
 
   if (message.content.startsWith(`${prefix}tip`)) {
     handleTip(message);
+    return;
   }
 
   if (message.content.startsWith(`${prefix}donate`)) {
     handleDonate(message);
+    return;
   }
 
   if (message.content.startsWith(`${prefix}deposit`)) {
     await message.reply(`Send SNAX to \`${TIP_CONTRACT}\` with your unique ID \`${message.author.id}\` as the memo to deposit!`);
-    return false;
+    return;
   }
 
   if (message.content.startsWith(`${prefix}withdraw`)) {
     handleWithdraw(message);
+    return;
   }
 
   if (message.content.startsWith(`${prefix}balance`)) {
-    showBalance(message)
+    showBalance(message);
+    return;
   }
 
   if (message.content.startsWith(`${prefix}help`)) {
-    message.reply(HELP_TEXT);
+    message.reply(HELP_TEXT.replace(/{prefix}/g, prefix));
+    return;
+  }
+
+  if (message.content.startsWith(`${prefix}`)) {
+    message.reply(`Invalid Command. Use \`${prefix}help\` for a list of commands.`);
   }
 });
 
