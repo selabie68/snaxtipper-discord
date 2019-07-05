@@ -18,6 +18,9 @@ const {
 let prefix = '!';
 
 client.on('ready', () => {
+  setInterval(async () =>{
+    await client.user.setActivity(`${client.guilds.size} Servers`, {type: "WATCHING"});
+  }, 1000 * 60 * 60); // Run this once an hour.
   console.log('SNAXTipBot is ready!');
 });
 
