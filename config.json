@@ -1,0 +1,23 @@
+{
+  "TIP_CONTRACT": "discordtip",
+  "TIP_ACCOUNT_PERM": "active",
+  "TIP_ACCOUNT_TABLE": "accounts",
+  "TIP_ACTION": "tip",
+  "WITHDRAW_ACTION": "withdraw",
+
+  "TOKEN_SYMBOL": "SNAX",
+  "TOKEN_CONTRACT": "snax.token",
+  "TOKEN_PRECISION": 4,
+  "MINIMUM_TIP": 0.0001,
+  "MAXIMUM_TIP": 100.0000,
+  "MAXIMUM_MONTHLY_WITHDRAW": 2500.0000,
+  "COMPANY_NAME": "SNAXTipBot",
+  "SUPPORT_TELEGRAM_GROUP": "@",
+
+  "BOT_TOKEN": "",
+  "PRIVATE_KEY": "",
+  "NODE_URL": "https://cdn.snax.one",
+  "BLOKS_URL": "https://explorer.snax.one",
+  "BOT_USERNAME": "SNAXTipBot",
+  "CHAIN": "mainnet",
+}
