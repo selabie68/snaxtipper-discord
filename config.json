@@ -19,5 +19,5 @@
   "NODE_URL": "https://cdn.snax.one",
   "BLOKS_URL": "https://explorer.snax.one",
   "BOT_USERNAME": "SNAXTipBot",
-  "CHAIN": "mainnet",
+  "CHAIN": "mainnet"
 }
